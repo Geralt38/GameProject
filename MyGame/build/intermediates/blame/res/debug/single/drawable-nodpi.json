@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\player.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\player.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\heart.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\heart.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\wallhorizontal.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\wallhorizontal.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\wallconnector.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\wallconnector.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\playerbullet.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\playerbullet.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\node.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\node.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\simpleenemy.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\simpleenemy.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\player1.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\player1.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\enemyshooting.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\enemyshooting.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\powerupgreen.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\powerupgreen.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\cruiser.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\cruiser.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\powerupblue.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\powerupblue.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\b64.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\b64.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\bigbullet.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\bigbullet.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\enemybullet.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\enemybullet.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\player2.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\player2.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\powerupred.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\powerupred.png"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\wallvertical.png",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\drawable-nodpi\\wallvertical.png"
+    }
+]
