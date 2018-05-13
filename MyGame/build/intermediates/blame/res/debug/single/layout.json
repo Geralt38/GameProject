@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "C:\\Users\\geral\\AndroidStudioProjects\\game\\MyGame\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\layout\\main.xml"
     }
 ]
