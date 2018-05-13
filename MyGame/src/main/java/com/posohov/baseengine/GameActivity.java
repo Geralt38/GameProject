@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
-import com.posohov.quoridor.scenes.GameScene;
+import com.posohov.sidescroller.scenes.GameScene;
 
 import course.labs.graphicslab.R;
 

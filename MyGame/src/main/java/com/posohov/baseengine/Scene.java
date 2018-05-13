@@ -8,7 +8,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.posohov.quoridor.Prefabs;
 import com.posohov.sidescroller.Components.GameControllerComponent;
 import com.posohov.baseengine.Components.Transform;
 
