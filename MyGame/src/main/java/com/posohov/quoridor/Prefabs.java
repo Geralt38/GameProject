@@ -4,7 +4,6 @@ package com.posohov.quoridor;
 import com.posohov.baseengine.GameObject;
 import com.posohov.baseengine.Scene;
 import com.posohov.quoridor.components.GridController;
-import com.posohov.sidescroller.Components.PlayerComponent;
 
 import course.labs.graphicslab.R;
 

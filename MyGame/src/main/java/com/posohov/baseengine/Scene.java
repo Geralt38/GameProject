@@ -8,8 +8,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.posohov.quoridor.Prefabs;
-import com.posohov.sidescroller.Components.GameControllerComponent;
 import com.posohov.baseengine.Components.Transform;
 
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -52,16 +50,6 @@ public class Scene extends View {
         startLoop();
     }
 
-    public GameControllerComponent getGameController() {
-        GameObject gc = getObjectByTag("gamecontroller");
-        if (gc != null) {
-            GameControllerComponent gcc = (GameControllerComponent) gc.getComponent(GameControllerComponent.class);
-            if (gcc != null) {
-                return gcc;
-            }
-        }
-        return null;
-    }
 
     public Camera getCamera() {return camera;}
 
@@ -189,13 +177,13 @@ public class Scene extends View {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 touchInfo.touched = true;
-                touchInfo.x = x;
-                touchInfo.y = y;
+                touchInfo.x = camera.screenToGameLength(x);
+                touchInfo.y = camera.screenToGameLength(y);
                 touchInfo.newTouch = true;
                 break;
             case MotionEvent.ACTION_MOVE:
-                touchInfo.x = x;
-                touchInfo.y = y;
+                touchInfo.x = camera.screenToGameLength(x);
+                touchInfo.y = camera.screenToGameLength(y);
                 break;
             case MotionEvent.ACTION_UP:
                 touchInfo.touched = false;
