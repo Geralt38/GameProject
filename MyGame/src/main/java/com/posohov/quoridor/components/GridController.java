@@ -10,12 +10,20 @@ import com.posohov.baseengine.Camera;
 import com.posohov.baseengine.Components.GameComponent;
 import com.posohov.quoridor.Grid;
 import com.posohov.quoridor.Node;
+import com.posohov.quoridor.PlayerTurnListener;
+import com.posohov.quoridor.TurnInfo;
 import com.posohov.quoridor.Wall;
+import com.posohov.quoridor.player.AIPlayer;
+import com.posohov.quoridor.player.HumanPlayer;
+import com.posohov.quoridor.player.Player;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import course.labs.graphicslab.R;
 
 
-public class GridController extends GameComponent {
+public class GridController extends GameComponent implements PlayerTurnListener{
 
     private Grid grid;
     private float x;
@@ -31,6 +39,9 @@ public class GridController extends GameComponent {
     private Bitmap player1Bitmap;
     private Bitmap player2Bitmap;
 
+    private List<Player> players;
+    private Player currentPlayer;
+
     @Override
     public void start() {
         super.start();
@@ -44,6 +55,24 @@ public class GridController extends GameComponent {
         wallWidth = squareSide/4f;
 
         prepareBitmaps(camera);
+
+        setPlayers();
+
+        currentPlayer = players.get(0);
+        currentPlayer.startTurn();
+    }
+
+    @Override
+    public void update() {
+        super.update();
+
+
+    }
+
+    private void setPlayers() {
+        players = new ArrayList<Player>();
+        players.add(new HumanPlayer(4, 8, this, grid, player1Bitmap));
+        players.add(new AIPlayer(4, 0, this, grid, player2Bitmap));
     }
 
     private void prepareBitmaps(Camera camera) {
@@ -92,9 +121,14 @@ public class GridController extends GameComponent {
                 }
             }
         }
-        Node node = grid.getPlayer1Node();
-        camera.drawSprite(canvas, player1Bitmap, x + node.x * (wallWidth + squareSide), node.y * (wallWidth + squareSide), paint);
-        node = grid.getPlayer2Node();
-        camera.drawSprite(canvas, player2Bitmap, x + node.x * (wallWidth + squareSide), node.y * (wallWidth + squareSide), paint);
+
+        for (Player player: players) {
+            camera.drawSprite(canvas, player.getSprite(), x + player.getX() * (wallWidth + squareSide), player.getY() * (wallWidth + squareSide), paint);
+        }
+    }
+
+    @Override
+    public void onPlayerTurnEnd(TurnInfo turnInfo) {
+
     }
 }

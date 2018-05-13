@@ -86,7 +86,7 @@ public class PlayerComponent extends GameComponent {
     @Override
     public void update() {
         if (touchInfo.touched) {
-            moveTowards(camera.screenToGameWidth(touchInfo.x), camera.screenToGameHeight(touchInfo.y));
+            moveTowards(camera.screenToGameLength(touchInfo.x), camera.screenToGameLength(touchInfo.y));
         }
         framesToNextShot--;
         if (framesToNextShot < 1) {

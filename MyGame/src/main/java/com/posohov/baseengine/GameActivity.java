@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
+import com.posohov.quoridor.scenes.GameScene;
+
 import course.labs.graphicslab.R;
 
 public class GameActivity extends Activity {
@@ -37,7 +39,7 @@ public class GameActivity extends Activity {
     }
 
     private void startScene() {
-		scene = new Scene(mFrame.getContext(), mFrame);
+		scene = new GameScene(mFrame.getContext(), mFrame);
 		mFrame.addView(scene);
 
 		mFrame.post(new Runnable() {

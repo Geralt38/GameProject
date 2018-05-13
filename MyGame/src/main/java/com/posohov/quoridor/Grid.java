@@ -7,8 +7,6 @@ public class Grid {
     private Wall[][] horizontalWalls;
     private Wall[][] verticalWalls;
     private boolean[][] wallConnectors;
-    private Node player1Node;
-    private Node player2Node;
 
     public Grid() {
         nodes = new Node[9][9];
@@ -29,16 +27,6 @@ public class Grid {
                 }
             }
         }
-        player1Node = nodes[4][8];
-        player2Node = nodes[4][0];
-    }
-
-    public Node getPlayer1Node() {
-        return player1Node;
-    }
-
-    public Node getPlayer2Node() {
-        return player2Node;
     }
 
     public Node[][] getNodes() {

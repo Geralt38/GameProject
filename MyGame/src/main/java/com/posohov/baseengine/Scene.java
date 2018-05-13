@@ -114,11 +114,8 @@ public class Scene extends View {
         objects.remove(object);
     }
 
-    private void setupObjects() {
-        /*addObject(Prefabs.getPlayer(this, 10, TOP_BAR_HEIGHT + 100));
-        addObject(Prefabs.getMainEnemySpawner(this));
-        addObject(Prefabs.getGameController(this));*/
-        addObject(Prefabs.getGridController(this));
+    protected void setupObjects() {
+
     }
 
     private void startScene() {

@@ -27,13 +27,7 @@ public class Camera {
         return arg * gameToScreenMul;
     }
 
-    public float screenToGameWidth(float widthArg) {
-        return widthArg / screenWidth * width;
-    }
-
-    public float screenToGameHeight(float heightArg) {
-        return heightArg / screenHeight * height;
-    }
+    public float screenToGameLength(float arg) {return arg / gameToScreenMul;}
 
     public void drawSprite(Canvas canvas, Bitmap sprite, float x, float y, long rotation, Paint paint) {
         canvas.save();

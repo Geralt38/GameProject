@@ -11,43 +11,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="065a439f-7fce-4820-a50b-54e7b632f5fe" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/robotium_solo_5_3_1.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/ContinuousSpawnerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/ContinuousSpawnerComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/CruiserSpawnerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/CruiserSpawnerComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/DamagePowerupComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/DamagePowerupComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/EnemyBulletComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/EnemyBulletComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/EnemyComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/EnemyComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/EnemyCruiserComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/EnemyCruiserComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/GameComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/GameComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/GameControllerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/GameControllerComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/HealthPowerupComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/HealthPowerupComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/MainEnemySpawnerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/MainEnemySpawnerComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/PlayerBulletComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerBulletComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/PlayerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/PowerupComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PowerupComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/Renderer.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Renderer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/ShootingEnemyComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/ShootingEnemyComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/ShootingWaveSpawner.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/ShootingWaveSpawner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/SimpleEnemyComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/SimpleEnemyComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/SpawnerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/SpawnerComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/Transform.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Transform.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/GameActivity.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/GameObject.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameObject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Prefabs.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Prefabs.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Scene.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_MyGame_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_MyGame_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_MyGame_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_MyGame_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_MyGame_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_MyGame_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Camera.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Camera.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/GameActivity$1.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/GameActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/GameActivity.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/GameActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Scene$2.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Scene$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Scene$TouchInfo.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Scene$TouchInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Scene.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/baseengine/Scene.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/quoridor/Grid.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/quoridor/Grid.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/quoridor/Node.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/quoridor/Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/quoridor/components/GridController.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/quoridor/components/GridController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/sidescroller/Components/PlayerComponent.class" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/classes/debug/com/posohov/sidescroller/Components/PlayerComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/outputs/apk/MyGame-debug.apk" afterPath="$PROJECT_DIR$/MyGame/build/outputs/apk/MyGame-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/MyGame.iml" afterPath="$PROJECT_DIR$/MyGame/MyGame.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/MyGame/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/MyGame/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Grid.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Grid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Node.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/components/GridController.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/components/GridController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java" afterPath="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java" />
     </list>
     <ignored path="Lab7_GraphicsLab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,8 +73,8 @@
       <file leaf-file-name="Scene.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="46" column="72" lean-forward="false" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+            <state relative-caret-position="425">
+              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,12 +82,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerComponent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java">
+      <file leaf-file-name="GameActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="88" column="101" lean-forward="false" selection-start-line="88" selection-start-column="101" selection-end-line="88" selection-end-column="101" />
+            <state relative-caret-position="561">
+              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/scenes/GameScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +109,8 @@
       <file leaf-file-name="GridController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/components/GridController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+            <state relative-caret-position="1156">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,38 +118,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Renderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Renderer.java">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="28" column="99" lean-forward="false" selection-start-line="28" selection-start-column="99" selection-end-line="28" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wall.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Wall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+            <state relative-caret-position="442">
+              <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AIPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/AIPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HumanPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/HumanPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridTouchListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/GridTouchListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerTurnListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/PlayerTurnListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,53 +183,8 @@
       <file leaf-file-name="Grid.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-              <folding>
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1110#1111#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Prefabs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Prefabs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="90" column="43" lean-forward="false" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Prefabs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Prefabs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1896,16 +1882,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Lab7_GraphicsLab/src/main/java/course/labs/graphicslab/GameObject.java" />
-        <option value="$PROJECT_DIR$/Lab7_GraphicsLab/src/main/java/course/labs/graphicslab/Component.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Component.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/Component.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/MoveComponent1.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/IMovable.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/GameActivity.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/SpriteController.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/Transform.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/Enemy.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/MoveComponent.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/PlayerBulletComponent.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/mygame/Components/SimpleEnemyComponent.java" />
@@ -1936,17 +1912,27 @@
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/GameControllerComponent.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Transform.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Renderer.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Node.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Prefabs.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Prefabs.java" />
-        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Wall.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/TurnInfo.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/PlayerTurnListener.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Node.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/TouchListener.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/GridTouchListener.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Grid.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Player.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/Player.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/AIPlayer.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/HumanPlayer.java" />
         <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/components/GridController.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/scenes/GameScene.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/scenes/GameScene.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java" />
+        <option value="$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java" />
       </list>
     </option>
   </component>
@@ -1974,6 +1960,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2042,8 +2029,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2065,28 +2052,6 @@
               <option name="myItemId" value="MyGame" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyGame" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2150,7 +2115,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2174,47 +2139,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="baseengine" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyGame" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="posohov" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baseengine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyGame" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2291,7 +2219,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419184" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582697" />
       </method>
     </configuration>
     <configuration default="false" name="BubbleActivityPop" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
@@ -2339,7 +2267,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419184" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582697" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -2412,7 +2340,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419184" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582697" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2460,7 +2388,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419184" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582697" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2643,7 +2571,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419185" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582698" />
       </method>
     </configuration>
     <configuration default="false" name="Lab7_GraphicsLab" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -2692,7 +2620,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419185" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582698" />
       </method>
     </configuration>
     <configuration default="false" name="MyGame" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -2741,7 +2669,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525532419185" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526209582698" />
       </method>
     </configuration>
     <list size="5">
@@ -2809,26 +2737,26 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2862,73 +2790,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Prefabs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="163" lean-forward="false" selection-start-line="33" selection-start-column="163" selection-end-line="33" selection-end-column="163" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1825#1826#0" expanded="false" />
-            <element signature="e#1869#1870#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Transform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7599">
-          <caret line="469" column="33" lean-forward="false" selection-start-line="469" selection-start-column="33" selection-end-line="469" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="69" />
-          <folding>
-            <element signature="e#418#436#0" expanded="false" />
-            <element signature="e#599#617#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyGame/src/main/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2970,6 +2831,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyGame/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
@@ -2978,9 +2842,6 @@
             <element signature="e#599#617#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab7_GraphicsLab/src/main/java/course/labs/graphicslab/Object1.java" />
@@ -3037,11 +2898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3049,9 +2905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3059,7 +2912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3067,9 +2919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3077,7 +2926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3085,7 +2933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3093,7 +2940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="72" lean-forward="true" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3101,7 +2947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3109,7 +2954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3117,10 +2961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-          <folding>
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3128,28 +2968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#863#944#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3157,7 +2975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3179,7 +2996,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Prefabs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="119">
           <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3191,28 +3008,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Components/Renderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="391">
           <caret line="28" column="99" lean-forward="false" selection-start-line="28" selection-start-column="99" selection-end-line="28" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3225,49 +3029,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Grid.java">
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding>
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1216#1217#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1309">
+          <caret line="88" column="102" lean-forward="false" selection-start-line="88" selection-start-column="102" selection-end-line="88" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java">
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="46" column="72" lean-forward="false" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+        <state relative-caret-position="432">
+          <caret line="29" column="78" lean-forward="false" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/Components/PlayerComponent.java">
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="88" column="101" lean-forward="false" selection-start-line="88" selection-start-column="101" selection-end-line="88" selection-end-column="101" />
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/TurnInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/PlayerTurnListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/GridTouchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/AIPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/player/HumanPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/sidescroller/scenes/GameScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/baseengine/GameActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/scenes/GameScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyGame/src/main/java/com/posohov/quoridor/components/GridController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
