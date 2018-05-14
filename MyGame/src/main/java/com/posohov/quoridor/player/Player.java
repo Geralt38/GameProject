@@ -14,6 +14,7 @@ public abstract class Player {
     protected Grid grid;
     protected PlayerTurnListener callback;
     protected Bitmap sprite;
+    protected int wallNumber;
 
     public Player(int x, int y, PlayerTurnListener callback, Grid grid, Bitmap sprite) {
         this.x = x;
@@ -22,6 +23,7 @@ public abstract class Player {
         this.callback = callback;
         this.grid = grid;
         this.sprite = sprite;
+        wallNumber = 10;
     }
 
     public abstract void startTurn();
@@ -36,5 +38,13 @@ public abstract class Player {
 
     public Bitmap getSprite() {
         return sprite;
+    }
+
+    public int getStartingRow() {
+        return startingRow;
+    }
+
+    public int getWallNumber() {
+        return wallNumber;
     }
 }

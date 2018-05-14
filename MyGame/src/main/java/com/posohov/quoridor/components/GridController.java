@@ -3,7 +3,11 @@ package com.posohov.quoridor.components;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.util.Log;
 
 import com.posohov.baseengine.Camera;
@@ -33,7 +37,10 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     private float wallWidth;
     private float cameraWidth;
     private float gridSide;
+    private float collisionMargin;
     private Paint paint;
+    private Paint wallTextPaint;
+    private Paint gridBackgroundPaint;
 
     private Bitmap nodeBitmap;
     private Bitmap wallConnectorBitmap;
@@ -44,6 +51,8 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     private Bitmap highlightedNodeBitmap;
     private Bitmap highlightedWallHorizontalBitmap;
     private Bitmap highlightedWallVerticalBitmap;
+    private Bitmap interfaceTop;
+    private Bitmap interfaceBottom;
 
     private List<Player> players;
     private Player currentPlayer;
@@ -59,12 +68,20 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         grid = new Grid();
 
         paint = object.scene.getPaint();
+        wallTextPaint = new Paint();
+        wallTextPaint.setTextSize(40);
+        wallTextPaint.setTypeface(Typeface.DEFAULT_BOLD);
+        gridBackgroundPaint = new Paint();
+        gridBackgroundPaint.setColor(Color.rgb(162,67,58));
 
         Camera camera = object.scene.getCamera();
         gridSide = camera.getHeight();
         x = (camera.getWidth() - camera.getHeight())/2f;
         squareSide = camera.getHeight()/11f;
         wallWidth = squareSide/4f;
+        collisionMargin = squareSide/5f;
+
+        setTextHight(camera.gameToScreenLength(squareSide/2));
 
         prepareBitmaps(camera);
 
@@ -84,19 +101,19 @@ public class GridController extends GameComponent implements PlayerTurnListener{
                 if ((tx > x) && (tx < x + gridSide)) {
                     for (int i = 0; i < 9; i++) {
                         for (int j = 0; j < 9; j++) {
-                            if ((tx > (x + i * (wallWidth + squareSide))) && (tx < (x + i * (wallWidth + squareSide) + squareSide)) &&
-                                    (ty > (j * (wallWidth + squareSide))) && (ty < (j * (wallWidth + squareSide) + squareSide))) {
+                            if ((tx > (x + i * (wallWidth + squareSide) + collisionMargin)) && (tx < (x + i * (wallWidth + squareSide) + squareSide - collisionMargin)) &&
+                                    (ty > (j * (wallWidth + squareSide) + collisionMargin)) && (ty < (j * (wallWidth + squareSide) + squareSide - collisionMargin))) {
                                 ((GridTouchListener) currentPlayer).nodeTouched(i, j);
                             }
                             if (i < 8) {
-                                if ((tx > (x +(i + 1) * squareSide + i * wallWidth)) && (tx < (x +(i + 1) * (squareSide + wallWidth))) &&
+                                if ((tx > (x +(i + 1) * squareSide + i * wallWidth - collisionMargin)) && (tx < (x +(i + 1) * (squareSide + wallWidth) + collisionMargin)) &&
                                         (ty > (j * ( squareSide + wallWidth))) && (ty < (j * ( squareSide + wallWidth) + squareSide))) {
                                     ((GridTouchListener)currentPlayer).wallTouched(i,j,false);
                                 }
                             }
                             if (j < 8) {
                                 if ((tx > (x + i * (squareSide + wallWidth))) && (tx < (x + i * (squareSide + wallWidth) + squareSide)) &&
-                                        (ty > ((j+1) * squareSide + j * wallWidth)) && (ty < ((j+1) * (squareSide + wallWidth)))) {
+                                        (ty > ((j+1) * squareSide + j * wallWidth - collisionMargin)) && (ty < ((j+1) * (squareSide + wallWidth) + collisionMargin))) {
                                     ((GridTouchListener)currentPlayer).wallTouched(i,j,true);
                                 }
                             }
@@ -107,10 +124,19 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         }
     }
 
+    private void setTextHight(float height) {
+        wallTextPaint.setTextSize(20f);
+        Rect bounds = new Rect();
+        float newSize;
+        wallTextPaint.getTextBounds("10", 0, 1, bounds);
+        newSize = height / (float)bounds.height() * 20f;
+        wallTextPaint.setTextSize(newSize);
+    }
+
     private void setPlayers() {
         players = new ArrayList<Player>();
         addPlayer(new HumanPlayer(4, 8, this, grid, player1Bitmap));
-        addPlayer(new AIPlayer(4, 0, this, grid, player2Bitmap));
+        addPlayer(new HumanPlayer(4, 0, this, grid, player2Bitmap));
     }
 
     private void addPlayer(Player player) {
@@ -131,6 +157,7 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         highlightedWallVerticalBitmap =  BitmapFactory.decodeResource(object.scene.getResources(), R.drawable.highlightedwallvertical);
         player1Bitmap =  BitmapFactory.decodeResource(object.scene.getResources(), R.drawable.player1);
         player2Bitmap =  BitmapFactory.decodeResource(object.scene.getResources(), R.drawable.player2);
+        interfaceTop = BitmapFactory.decodeResource(object.scene.getResources(), R.drawable.interfacepiece);
 
         nodeBitmap = Bitmap.createScaledBitmap(nodeBitmap, screenSquareSide, screenSquareSide , false);
         highlightedNodeBitmap = Bitmap.createScaledBitmap(highlightedNodeBitmap, screenSquareSide, screenSquareSide , false);
@@ -141,11 +168,17 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         highlightedWallVerticalBitmap = Bitmap.createScaledBitmap(highlightedWallVerticalBitmap, screenWallWidth, screenSquareSide , false);
         player1Bitmap = Bitmap.createScaledBitmap(player1Bitmap, screenSquareSide, screenSquareSide , false);
         player2Bitmap = Bitmap.createScaledBitmap(player2Bitmap, screenSquareSide, screenSquareSide , false);
+        interfaceTop = Bitmap.createScaledBitmap(interfaceTop,  (int)camera.gameToScreenLength(x - 30) , screenSquareSide , false);
+
+        Matrix matrix = new Matrix();
+        matrix.postScale(1, -1, interfaceTop.getWidth()/2f, interfaceTop.getHeight()/2f);
+        interfaceBottom =  Bitmap.createBitmap(interfaceTop, 0, 0, interfaceTop.getWidth(), interfaceTop.getHeight(), matrix, false);
     }
 
     @Override
     public void draw(Canvas canvas, Camera camera) {
         super.draw(canvas, camera);
+        camera.drawRect(canvas, x - 30, 0, x + gridSide + 30, gridSide, gridBackgroundPaint);
         Node[][] nodes = grid.getNodes();
         Wall[][] vWalls = grid.getVerticalWalls();
         Wall[][] hWalls = grid.getHorizontalWalls();
@@ -180,13 +213,43 @@ public class GridController extends GameComponent implements PlayerTurnListener{
             }
         }
 
+        camera.drawSprite(canvas, interfaceTop, 0, 0, paint);
+        camera.drawSprite(canvas, interfaceBottom, 0, (float)(gridSide - squareSide), paint);
         for (Player player: players) {
             camera.drawSprite(canvas, player.getSprite(), x + player.getX() * (wallWidth + squareSide), player.getY() * (wallWidth + squareSide), paint);
         }
+
+        Player player = players.get(1);
+        camera.drawSprite(canvas, player.getSprite(), 0, 0, paint);
+        camera.drawText(canvas, squareSide + 20, squareSide * 3 / 4, Integer.toString(player.getWallNumber()) ,wallTextPaint);
+        player = players.get(0);
+        camera.drawSprite(canvas, player.getSprite(), 0, gridSide - squareSide, paint);
+        camera.drawText(canvas, squareSide + 20, gridSide - squareSide / 4, Integer.toString(player.getWallNumber()) ,wallTextPaint);
+
     }
 
     @Override
     public void onPlayerTurnEnd() {
+        if (checkForVictory()) {
+            object.scene.restart();
+        }
+        SelectNextPlayer();
+    }
 
+    private boolean checkForVictory() {
+        int endRow = currentPlayer.getStartingRow() == 0? 8 : 0;
+        if (endRow == currentPlayer.getY()) {
+            return true;
+        }
+        return false;
+    }
+
+    private void SelectNextPlayer() {
+        int i = players.indexOf(currentPlayer);
+        if (i < players.size() - 1) {
+            currentPlayer = players.get(i + 1);
+        } else {
+            currentPlayer = players.get(0);
+        }
     }
 }

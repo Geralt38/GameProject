@@ -16,6 +16,13 @@ public class Wall {
         this.horizontal = horizontal;
     }
 
+    public Wall(int x, int y, boolean blocked, boolean horizontal) {
+        this.x = x;
+        this.y = y;
+        this.blocked = blocked;
+        this.horizontal = horizontal;
+    }
+
     public void block() {blocked = true;}
 
     public boolean isBlocked() {return blocked;}

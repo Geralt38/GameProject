@@ -23,14 +23,16 @@ public class Scene extends View {
 
     private TouchInfo touchInfo = new TouchInfo();
 
-    private final Paint mPainter = new Paint();
+    protected final Paint mPainter = new Paint();
     private ScheduledFuture<?> mMoverFuture;
 
     private RelativeLayout mFrame;
 
     private CopyOnWriteArrayList<GameObject> objects = new CopyOnWriteArrayList<GameObject>();
 
-    private Camera camera;
+    protected Camera camera;
+
+    protected boolean stopped;
 
     public Scene(Context context, RelativeLayout frame) {
         super(context);
@@ -38,6 +40,8 @@ public class Scene extends View {
         mFrame = frame;
 
         mPainter.setAntiAlias(true);
+
+        stopped = false;
 
     }
 
@@ -64,6 +68,8 @@ public class Scene extends View {
     }
 
     public void restart() {
+
+        stopped = true;
 
         if (null != mMoverFuture && !mMoverFuture.isDone()) {
             mMoverFuture.cancel(true);
@@ -157,7 +163,10 @@ public class Scene extends View {
 
     @Override
     protected synchronized void onDraw(Canvas canvas) {
+            drawScene(canvas);
+    }
 
+    protected void drawScene(Canvas canvas) {
         canvas.save();
 
         for (GameObject object : objects) {
@@ -165,8 +174,6 @@ public class Scene extends View {
         }
 
         canvas.restore();
-
-
     }
 
 

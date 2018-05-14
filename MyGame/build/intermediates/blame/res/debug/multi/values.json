@@ -107,8 +107,8 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 43,
-                    "endOffset": 94
+                    "endColumn": 45,
+                    "endOffset": 96
                 },
                 "from": {
                     "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml",
@@ -116,8 +116,8 @@
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 57,
-                        "endColumn": 43,
-                        "endOffset": 96
+                        "endColumn": 45,
+                        "endOffset": 98
                     }
                 }
             },
@@ -125,76 +125,48 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 99,
+                    "startOffset": 101,
                     "endColumn": 44,
-                    "endOffset": 139
+                    "endOffset": 141
                 },
                 "from": {
-                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 304,
-                        "endColumn": 44,
-                        "endOffset": 344
-                    }
+                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 144,
+                    "startOffset": 146,
                     "endColumn": 70,
-                    "endOffset": 210
+                    "endOffset": 212
                 },
                 "from": {
-                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 232,
-                        "endColumn": 70,
-                        "endOffset": 298
-                    }
+                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 215,
+                    "startOffset": 217,
                     "endColumn": 70,
-                    "endOffset": 281
+                    "endOffset": 283
                 },
                 "from": {
-                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 160,
-                        "endColumn": 70,
-                        "endOffset": 226
-                    }
+                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 286,
+                    "startOffset": 288,
                     "endColumn": 56,
-                    "endOffset": 338
+                    "endOffset": 340
                 },
                 "from": {
-                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 102,
-                        "endColumn": 56,
-                        "endOffset": 154
-                    }
+                    "file": "C:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\src\\main\\res\\values\\strings.xml"
                 }
             }
         ]

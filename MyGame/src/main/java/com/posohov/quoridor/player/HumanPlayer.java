@@ -65,26 +65,33 @@ public class HumanPlayer extends Player implements GridTouchListener{
 
     @Override
     public void wallTouched(int x, int y, boolean isHorizontal) {
-        Wall wall = grid.getWall(x,y,isHorizontal);
-        switch (turnState) {
+        if (wallNumber > 0) {
+            Wall wall = grid.getWall(x, y, isHorizontal);
+            switch (turnState) {
 
-            case WALLSSELECTED:
-                if (wall.isHighlighted()) {
-                    grid.blockWalls(selectedWall, wall);
+                case WALLSSELECTED:
+                    if (wall.isHighlighted()) {
+                        grid.blockWalls(selectedWall, wall);
+                        wallNumber--;
+                        grid.dehighlightEverything();
+                        turnState = TurnState.STARTED;
+                        callback.onPlayerTurnEnd();
+                        break;
+                    }
+                case NODESSELECTED:
                     grid.dehighlightEverything();
                     turnState = TurnState.STARTED;
+                case STARTED:
+                    boolean done = highlightWalls(wall);
+                    if (done) {
+                        selectedWall = wall;
+                        turnState = TurnState.WALLSSELECTED;
+                    }
                     break;
-                }
-            case NODESSELECTED:
-                grid.dehighlightEverything();
-                turnState = TurnState.STARTED;
-            case STARTED:
-                boolean done = highlightWalls(wall);
-                if (done) {
-                    selectedWall = wall;
-                    turnState = TurnState.WALLSSELECTED;
-                }
-                break;
+            }
+        } else {
+            grid.dehighlightEverything();
+            turnState = TurnState.STARTED;
         }
     }
 

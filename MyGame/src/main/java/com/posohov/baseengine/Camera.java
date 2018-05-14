@@ -20,7 +20,6 @@ public class Camera {
         this.screenHeight = screenHeight;
         gameToScreenMul = screenHeight/height;
         width = screenWidth / gameToScreenMul;
-        Log.d("cam ww", Float.toString(width));
     }
 
     public float gameToScreenLength(float arg) {
@@ -40,6 +39,18 @@ public class Camera {
 
     public void drawSprite(Canvas canvas, Bitmap sprite, float x, float y, Paint paint) {
         drawSprite(canvas, sprite, x, y, 0, paint);
+    }
+
+    public void drawText(Canvas canvas, float x, float y, String text, Paint paint) {
+        canvas.drawText(text, gameToScreenLength(x), gameToScreenLength(y), paint);
+    }
+
+    public void fillScreen(Canvas canvas, Paint paint) {
+        canvas.drawRect(0, 0, screenWidth, screenHeight, paint);
+    }
+
+    public void drawRect(Canvas canvas, float x, float y, float width, float height, Paint paint) {
+        canvas.drawRect(gameToScreenLength(x), gameToScreenLength(y), gameToScreenLength(width), gameToScreenLength(height), paint);
     }
 
     public float getWidth() {

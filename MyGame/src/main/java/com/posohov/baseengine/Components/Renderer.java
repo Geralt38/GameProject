@@ -40,13 +40,6 @@ public class Renderer extends GameComponent {
 
     @Override
     public void draw(Canvas canvas, Camera camera) {
-
         camera.drawSprite(canvas, spriteScaled, transform.x, transform.y, transform.rotation, painter);
-        /*canvas.save();
-
-        canvas.rotate((float)(transform.rotation), transform.x + transform.width/2, transform.y + transform.height/2);
-        canvas.drawBitmap(spriteScaled, transform.x, transform.y, painter);
-
-        canvas.restore();*/
     }
 }

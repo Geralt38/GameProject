@@ -1,12 +1,14 @@
 package com.posohov.quoridor;
 
 
+import android.util.Log;
+
 import com.posohov.quoridor.player.Player;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Grid {
+public class Grid{
 
     private Node[][] nodes;
     private Wall[][] horizontalWalls;
@@ -31,6 +33,31 @@ public class Grid {
                 }
                 if (j<8) {
                     horizontalWalls[i][j] = new Wall(i,j, true);
+                }
+            }
+        }
+    }
+
+    public Grid(Grid grid) {
+        players = new ArrayList<Player>();
+        for (Player player : grid.players) {
+            addPlayer(player);
+        }
+        nodes = new Node[9][9];
+        horizontalWalls = new Wall[9][8];
+        verticalWalls = new Wall[8][9];
+        wallConnectors = new boolean[8][8];
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                nodes[i][j] = new Node(i,j);
+                if (i<8) {
+                    verticalWalls[i][j] = new Wall(i,j, grid.getVerticalWalls()[i][j].isBlocked(),false);
+                    if (j<8) {
+                        wallConnectors[i][j] = false;
+                    }
+                }
+                if (j<8) {
+                    horizontalWalls[i][j] = new Wall(i,j, grid.getHorizontalWalls()[i][j].isBlocked(), true);
                 }
             }
         }
@@ -71,6 +98,14 @@ public class Grid {
         } else {
             int y = Math.min(wall1.y, wall2.y);
             wallConnectors[wall1.x][y] = true;
+        }
+    }
+
+    public void blockWall(int x, int y, boolean isHorisontal) {
+        if (isHorisontal) {
+            horizontalWalls[x][y].block();
+        } else {
+            verticalWalls[x][y].block();
         }
     }
 
@@ -187,6 +222,23 @@ public class Grid {
     }
 
     public boolean blocksPath(Wall wall1, Wall wall2) {
+        Grid newGrid = new Grid(this);
+        newGrid.blockWall(wall1.x,wall1.y, wall1.isHorizontal());
+        newGrid.blockWall(wall2.x,wall2.y, wall2.isHorizontal());
+        for (Player player : players) {
+            int row = player.getStartingRow() == 0? 8 : 0;
+            boolean pathExists = false;
+            for (int i = 0; i < 9; i++) {
+                List<Node> path = PathFinder.findPath(newGrid, newGrid.getNodes()[player.getX()][player.getY()], newGrid.getNodes()[i][row]);
+                if (path != null) {
+                    pathExists = true;
+                    break;
+                }
+            }
+            if (!pathExists) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -213,4 +265,6 @@ public class Grid {
     public boolean[][] getWallConnectors() {
         return wallConnectors;
     }
+
+
 }

@@ -15,12 +15,13 @@ public final class R {
         public static final int highlightedwallhorizontal=0x7f020001;
         public static final int highlightedwallvertical=0x7f020002;
         public static final int ic_launcher=0x7f020003;
-        public static final int node=0x7f020004;
-        public static final int player1=0x7f020005;
-        public static final int player2=0x7f020006;
-        public static final int wallconnector=0x7f020007;
-        public static final int wallhorizontal=0x7f020008;
-        public static final int wallvertical=0x7f020009;
+        public static final int interfacepiece=0x7f020004;
+        public static final int node=0x7f020005;
+        public static final int player1=0x7f020006;
+        public static final int player2=0x7f020007;
+        public static final int wallconnector=0x7f020008;
+        public static final int wallhorizontal=0x7f020009;
+        public static final int wallvertical=0x7f02000a;
     }
     public static final class id {
         public static final int frame=0x7f070000;
