@@ -6,22 +6,22 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.Typeface;
-import android.util.Log;
 
 import com.posohov.baseengine.Camera;
 import com.posohov.baseengine.Components.GameComponent;
+import com.posohov.baseengine.GameActivity;
 import com.posohov.baseengine.Scene;
 import com.posohov.quoridor.Grid;
 import com.posohov.quoridor.GridTouchListener;
 import com.posohov.quoridor.Node;
 import com.posohov.quoridor.PlayerTurnListener;
-import com.posohov.quoridor.TurnInfo;
+import com.posohov.quoridor.Prefabs;
 import com.posohov.quoridor.Wall;
 import com.posohov.quoridor.player.AIPlayer;
 import com.posohov.quoridor.player.HumanPlayer;
 import com.posohov.quoridor.player.Player;
+import com.posohov.quoridor.scenes.GameScene;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +38,7 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     private float cameraWidth;
     private float gridSide;
     private float collisionMargin;
+    private boolean gameEnded;
     private Paint paint;
     private Paint wallTextPaint;
     private Paint gridBackgroundPaint;
@@ -58,6 +59,11 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     private Player currentPlayer;
 
     private Scene.TouchInfo touchInfo;
+    private GameScene.GameType gameType;
+
+    public GridController(GameScene.GameType gameType) {
+        this.gameType = gameType;
+    }
 
     @Override
     public void start() {
@@ -75,18 +81,20 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         gridBackgroundPaint.setColor(Color.rgb(162,67,58));
 
         Camera camera = object.scene.getCamera();
+        cameraWidth = camera.getWidth();
         gridSide = camera.getHeight();
         x = (camera.getWidth() - camera.getHeight())/2f;
         squareSide = camera.getHeight()/11f;
         wallWidth = squareSide/4f;
         collisionMargin = squareSide/5f;
 
-        setTextHight(camera.gameToScreenLength(squareSide/2));
+        camera.setTextHeight(wallTextPaint, squareSide/2);
 
         prepareBitmaps(camera);
 
         setPlayers();
 
+        gameEnded = false;
         currentPlayer = players.get(0);
         currentPlayer.startTurn();
     }
@@ -95,6 +103,10 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     public void update() {
         super.update();
         if (touchInfo.newTouch) {
+            if (gameEnded) {
+                object.scene.switchScene(GameActivity.SceneType.MENU);
+                return;
+            }
             if (currentPlayer instanceof GridTouchListener) {
                 float tx = touchInfo.x;
                 float ty = touchInfo.y;
@@ -124,19 +136,18 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         }
     }
 
-    private void setTextHight(float height) {
-        wallTextPaint.setTextSize(20f);
-        Rect bounds = new Rect();
-        float newSize;
-        wallTextPaint.getTextBounds("10", 0, 1, bounds);
-        newSize = height / (float)bounds.height() * 20f;
-        wallTextPaint.setTextSize(newSize);
-    }
 
     private void setPlayers() {
         players = new ArrayList<Player>();
         addPlayer(new HumanPlayer(4, 8, this, grid, player1Bitmap));
-        addPlayer(new HumanPlayer(4, 0, this, grid, player2Bitmap));
+        switch (gameType) {
+            case PVP:
+                addPlayer(new HumanPlayer(4, 0, this, grid, player2Bitmap));
+                break;
+            case PVAI:
+                addPlayer(new AIPlayer(4, 0, this, grid, player2Bitmap));
+                break;
+        }
     }
 
     private void addPlayer(Player player) {
@@ -178,7 +189,7 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     @Override
     public void draw(Canvas canvas, Camera camera) {
         super.draw(canvas, camera);
-        camera.drawRect(canvas, x - 30, 0, x + gridSide + 30, gridSide, gridBackgroundPaint);
+        camera.drawRect(canvas, x - 30, 0, gridSide + 60, gridSide, gridBackgroundPaint);
         Node[][] nodes = grid.getNodes();
         Wall[][] vWalls = grid.getVerticalWalls();
         Wall[][] hWalls = grid.getHorizontalWalls();
@@ -231,9 +242,11 @@ public class GridController extends GameComponent implements PlayerTurnListener{
     @Override
     public void onPlayerTurnEnd() {
         if (checkForVictory()) {
-            object.scene.restart();
+            gameEnded = true;
+            object.scene.addObjectDuringRuntime(Prefabs.getVictoryRenderer(object.scene, 0, gridSide / 2F - 100F, cameraWidth, 200F, players.indexOf(currentPlayer) + 1));
+        } else {
+            selectNextPlayer();
         }
-        SelectNextPlayer();
     }
 
     private boolean checkForVictory() {
@@ -244,7 +257,7 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         return false;
     }
 
-    private void SelectNextPlayer() {
+    private void selectNextPlayer() {
         int i = players.indexOf(currentPlayer);
         if (i < players.size() - 1) {
             currentPlayer = players.get(i + 1);

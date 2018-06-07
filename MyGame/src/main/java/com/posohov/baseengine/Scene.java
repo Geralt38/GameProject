@@ -86,6 +86,26 @@ public class Scene extends View {
         });
     }
 
+    public void switchScene(final GameActivity.SceneType sceneType) {
+
+        stopped = true;
+
+        if (null != mMoverFuture && !mMoverFuture.isDone()) {
+            mMoverFuture.cancel(true);
+        }
+
+        mFrame.post(new Runnable() {
+            @Override
+            public void run() {
+
+                ((GameActivity)getContext()).startScene(sceneType);
+                mFrame.removeView(Scene.this);
+
+            }
+        });
+
+    }
+
     public GameObject getObjectByTag(String tag) {
         for (GameObject object: objects) {
             if (object.tag.equals(tag)) {
@@ -176,6 +196,9 @@ public class Scene extends View {
         canvas.restore();
     }
 
+    public void onBackPressed() {
+
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -205,5 +228,8 @@ public class Scene extends View {
         public float x,y;
         public boolean touched = false;
         public boolean newTouch = false;
+        public boolean inRect(float argX, float argY, float width, float height) {
+            return ((x > argX) && (x < argX + width) && (y > argY) && (y < argY + height));
+        }
     }
 }

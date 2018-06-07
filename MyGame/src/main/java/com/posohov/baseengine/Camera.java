@@ -4,6 +4,7 @@ package com.posohov.baseengine;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.Log;
 
 public class Camera {
@@ -50,7 +51,17 @@ public class Camera {
     }
 
     public void drawRect(Canvas canvas, float x, float y, float width, float height, Paint paint) {
-        canvas.drawRect(gameToScreenLength(x), gameToScreenLength(y), gameToScreenLength(width), gameToScreenLength(height), paint);
+        canvas.drawRect(gameToScreenLength(x), gameToScreenLength(y), gameToScreenLength(x + width), gameToScreenLength(y + height), paint);
+    }
+
+    public void setTextHeight(Paint paint, float textHeight) {
+        textHeight = gameToScreenLength(textHeight);
+        paint.setTextSize(20f);
+        Rect bounds = new Rect();
+        float newSize;
+        paint.getTextBounds("10", 0, 1, bounds);
+        newSize = textHeight / (float)bounds.height() * 20f;
+        paint.setTextSize(newSize);
     }
 
     public float getWidth() {

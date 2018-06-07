@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
 import com.posohov.quoridor.scenes.GameScene;
+import com.posohov.quoridor.scenes.MenuScene;
 
 import course.labs.graphicslab.R;
 
@@ -21,6 +22,8 @@ public class GameActivity extends Activity {
 
 	public static final int REFRESH_RATE = 40;
 
+	private SceneType currentSceneType;
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -31,15 +34,27 @@ public class GameActivity extends Activity {
 		// Установка пользовательского интерфейса
 		mFrame = (RelativeLayout) findViewById(R.id.frame);
 
-		startScene();
+		startScene(SceneType.MENU);
 	}
 
 	public void restart() {
-        startScene();
+        startScene(currentSceneType);
     }
 
-    private void startScene() {
-		scene = new GameScene(mFrame.getContext(), mFrame);
+    public void startScene(SceneType sceneType) {
+		switch (sceneType) {
+			default:
+			case MENU:
+				scene = new MenuScene(mFrame.getContext(), mFrame);
+				break;
+			case PVP:
+				scene = new GameScene(mFrame.getContext(), mFrame, GameScene.GameType.PVP);
+				break;
+			case PVAI:
+				scene = new GameScene(mFrame.getContext(), mFrame, GameScene.GameType.PVAI);
+				break;
+		}
+
 		mFrame.addView(scene);
 
 		mFrame.post(new Runnable() {
@@ -79,5 +94,11 @@ public class GameActivity extends Activity {
 
 	}
 
+	@Override
+	public void onBackPressed() {
+		//super.onBackPressed();
+		scene.onBackPressed();
+	}
 
+	public enum SceneType {MENU, PVP, PVAI}
 }
