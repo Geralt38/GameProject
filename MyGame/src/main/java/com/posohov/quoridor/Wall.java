@@ -25,6 +25,8 @@ public class Wall {
 
     public void block() {blocked = true;}
 
+    public void unblock() {blocked = false;}
+
     public boolean isBlocked() {return blocked;}
 
     public void highlight() {highlighted = true;}

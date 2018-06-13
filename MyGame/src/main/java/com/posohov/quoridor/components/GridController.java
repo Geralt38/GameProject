@@ -264,5 +264,6 @@ public class GridController extends GameComponent implements PlayerTurnListener{
         } else {
             currentPlayer = players.get(0);
         }
+        currentPlayer.startTurn();
     }
 }

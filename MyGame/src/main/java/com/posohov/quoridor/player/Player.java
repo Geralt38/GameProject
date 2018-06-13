@@ -8,13 +8,13 @@ import com.posohov.quoridor.PlayerTurnListener;
 
 public abstract class Player {
 
-    protected int x;
-    protected int y;
+    public int x;
+    public int y;
     protected int startingRow;
     protected Grid grid;
     protected PlayerTurnListener callback;
     protected Bitmap sprite;
-    protected int wallNumber;
+    public int wallNumber;
 
     public Player(int x, int y, PlayerTurnListener callback, Grid grid, Bitmap sprite) {
         this.x = x;

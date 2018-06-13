@@ -3,6 +3,7 @@ package com.posohov.quoridor;
 
 import android.util.Log;
 
+import com.posohov.quoridor.player.Move;
 import com.posohov.quoridor.player.Player;
 
 import java.util.ArrayList;
@@ -98,6 +99,18 @@ public class Grid{
         } else {
             int y = Math.min(wall1.y, wall2.y);
             wallConnectors[wall1.x][y] = true;
+        }
+    }
+
+    public void unblockWalls(Wall wall1, Wall wall2) {
+        wall1.unblock();
+        wall2.unblock();
+        if (wall1.isHorizontal()) {
+            int x = Math.min(wall1.x, wall2.x);
+            wallConnectors[x][wall1.y] = false;
+        } else {
+            int y = Math.min(wall1.y, wall2.y);
+            wallConnectors[wall1.x][y] = false;
         }
     }
 
@@ -221,6 +234,10 @@ public class Grid{
         return walls;
     }
 
+    public boolean canPlaceWall(Wall wall1, Wall wall2) {
+        return (!wallConnectors[wall1.x][wall1.y]) && (!wall1.isBlocked()) && (!wall2.isBlocked());
+    }
+
     public boolean blocksPath(Wall wall1, Wall wall2) {
         Grid newGrid = new Grid(this);
         newGrid.blockWall(wall1.x,wall1.y, wall1.isHorizontal());
@@ -266,5 +283,37 @@ public class Grid{
         return wallConnectors;
     }
 
+    public List<Player> getPlayers() {
+        return players;
+    }
 
+    public void doMove(Move move, int playerIndex) {
+        if (move.isWall) {
+            players.get(playerIndex).wallNumber --;
+            if (move.isHorizontal) {
+                blockWalls(horizontalWalls[move.x][move.y],horizontalWalls[move.x+1][move.y]);
+            } else {
+                blockWalls(verticalWalls[move.x][move.y],verticalWalls[move.x][move.y+1]);
+            }
+        } else {
+            Player player = players.get(playerIndex);
+            player.x = move.x;
+            player.y = move.y;
+        }
+    }
+
+    public void undoMove(Move move, int playerIndex) {
+        if (move.isWall) {
+            players.get(playerIndex).wallNumber ++;
+            if (move.isHorizontal) {
+                unblockWalls(horizontalWalls[move.x][move.y],horizontalWalls[move.x+1][move.y]);
+            } else {
+                unblockWalls(verticalWalls[move.x][move.y],verticalWalls[move.x][move.y+1]);
+            }
+        } else {
+            Player player = players.get(playerIndex);
+            player.x = move.pastx;
+            player.y = move.pasty;
+        }
+    }
 }
