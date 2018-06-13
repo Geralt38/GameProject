@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 import com.posohov.quoridor.Grid;
 import com.posohov.quoridor.PlayerTurnListener;
 
-public abstract class Player {
+public class Player {
 
     public int x;
     public int y;
@@ -26,7 +26,9 @@ public abstract class Player {
         wallNumber = 10;
     }
 
-    public abstract void startTurn();
+    public void startTurn() {
+
+    }
 
     public int getX() {
         return x;

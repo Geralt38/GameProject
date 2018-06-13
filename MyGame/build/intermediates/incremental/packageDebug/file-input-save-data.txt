@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jun 13 18:58:19 IRKT 2018
+#Wed Jun 13 20:47:15 IRKT 2018
 8.set=ANDROID_RESOURCE
 1.base=C\:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\build\\intermediates\\res\\resources-debug.ap_
 1.file=C\:\\Users\\geral\\AndroidStudioProjects\\game-quoridor\\MyGame\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc

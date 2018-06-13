@@ -43,6 +43,7 @@ public class Grid{
         players = new ArrayList<Player>();
         for (Player player : grid.players) {
             addPlayer(player);
+            //addPlayer(new Player(player.x, player.y, null, this, null));
         }
         nodes = new Node[9][9];
         horizontalWalls = new Wall[9][8];

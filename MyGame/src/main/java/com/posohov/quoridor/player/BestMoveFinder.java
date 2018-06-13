@@ -30,31 +30,50 @@ public class BestMoveFinder implements Runnable {
     @Override
     public void run() {
 
-        Move move = findBestMove();
+        Move move = findBestMove(1);
         oldGrid.doMove(move, playerIndex);
 
         callback.onPlayerTurnEnd();
     }
 
-    private Move findBestMove() {
+    private Move findBestMove(int depth) {
 
-        float score = 200;
-        Move bestMove = null;
-        List<Move> moves = getMoves(grid.getPlayers().get(playerIndex));
-        if (grid.getPlayers().get(playerIndex).wallNumber > 0) {
-            moves.addAll(getWallPlacements());
+        if (depth == 0) {
+            Move move = new Move(0,0,0,0);
+            move.value = Evaluate();
+            return move;
         }
 
+        float score;
+        int currentPlayerIndex;
+        if (depth % 2 == 1) {
+            score = 200;
+            currentPlayerIndex = playerIndex;
+        } else {
+            score = - 200;
+            currentPlayerIndex = playerIndex == 0 ? 1 : 0;
+        }
+        Move bestMove = null;
+        List<Move> moves = getMoves(grid.getPlayers().get(currentPlayerIndex));
+        if (grid.getPlayers().get(currentPlayerIndex).wallNumber > 0) {
+            moves.addAll(getWallPlacements());
+        }
         for (Move move : moves) {
+            grid.doMove(move, currentPlayerIndex);
+            Move eval = findBestMove(depth-1);
+            move.value = eval.value;
+            grid.undoMove(move, currentPlayerIndex);
 
-            grid.doMove(move, playerIndex);
-            float eval = Evaluate();
-            move.value = eval;
-            grid.undoMove(move, playerIndex);
-
-            if (eval < score) {
-                score = eval;
-                bestMove = move;
+            if (playerIndex == currentPlayerIndex) {
+                if (eval.value < score) {
+                    score = eval.value;
+                    bestMove = move;
+                }
+            } else {
+                if (eval.value > score) {
+                    score = eval.value;
+                    bestMove = move;
+                }
             }
         }
         return bestMove;

@@ -17,6 +17,6 @@ public class AIPlayer extends Player {
     public void startTurn() {
         Log.d("aitest", "kek");
         Thread thread = new Thread(new BestMoveFinder(grid, grid.getPlayers().indexOf(this), callback));
-        thread.run();
+        thread.start();
     }
 }
